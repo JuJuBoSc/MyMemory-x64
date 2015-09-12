@@ -30,15 +30,15 @@ namespace MyMemory_x64.Threads
             ThreadId = Methods.GetThreadId(ThreadHandle);
         }
 
-        /*public bool Suspend()
+        public bool Suspend()
         {
-            return Process.Win32.SuspendThread(ThreadHandle);
+            return Syscall.SuspendThread(ThreadHandle);
         }
 
         public bool Resume()
         {
-            return Process.Win32.ResumeThread(ThreadHandle);
-        }*/
+            return Syscall.ResumeThread(ThreadHandle);
+        }
 
         public void Dispose()
         {
